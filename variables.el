@@ -9,3 +9,8 @@
 (if (eq system-type 'darwin)
     (set-face-attribute 'default nil :height 120 :foundry "nil" :family "Menlo")
 )
+
+(defun my-prog-mode-hook () ""
+       (whitespace-mode)
+       (linum-mode))
+(add-hook 'prog-mode-hook 'my-prog-mode-hook)
