@@ -12,5 +12,5 @@
 
 (defun my-prog-mode-hook () ""
        (whitespace-mode)
-       (linum-mode))
+       (display-line-numbers-mode))
 (add-hook 'prog-mode-hook 'my-prog-mode-hook)
