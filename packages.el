@@ -37,5 +37,9 @@
   (setq lsp-clangd-binary-path "/usr/bin/clangd")
   (setq lsp-client-clangd-args '("-j=4" "-background-index" "-log=error"))
   (setq lsp-keymap-prefix "C-c C-l"))
+(use-package company
+  :ensure t
+  :config
+  (add-hook 'c-mode-hook 'company-mode))
 
 (require 'org)
