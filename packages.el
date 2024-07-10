@@ -42,4 +42,13 @@
   :config
   (add-hook 'c-mode-hook 'company-mode))
 
+(use-package treemacs
+  :ensure t)
+
+(use-package treemacs-magit
+  :ensure t)
+
+(use-package lsp-treemacs
+  :ensure t)
+
 (require 'org)
