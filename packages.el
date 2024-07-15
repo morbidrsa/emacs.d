@@ -3,6 +3,10 @@
 	     '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
+(when (or (string= (system-name) "fedora")
+	  (string= (system-name) "debian"))
+  (package-install 'adwaita-dark-theme))
+
 (use-package editorconfig
   :ensure t
   :config
