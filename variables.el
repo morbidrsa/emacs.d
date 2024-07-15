@@ -19,3 +19,18 @@
        (whitespace-mode)
        (display-line-numbers-mode))
 (add-hook 'prog-mode-hook 'my-prog-mode-hook)
+
+(add-to-list 'display-buffer-alist
+     '("\*vterm\*"
+       (display-buffer-in-side-window)
+       (window-height . 0.25)
+       (side . bottom)
+       (slot . 0)))
+
+(add-to-list 'display-buffer-alist
+     '("\*compilation\*"
+       (display-buffer-in-side-window)
+       (window-height . 0.25)
+       (side . bottom)
+       (slot . 0)))
+
