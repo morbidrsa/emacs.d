@@ -10,11 +10,6 @@
     (set-face-attribute 'default nil :height 120 :foundry "nil" :family "Menlo")
   )
 
-(when (or (string= (system-name) "fedora")
-	  (string= (system-name) "debian"))
-  (load-theme 'adwaita-dark))
-
-
 (defun my-prog-mode-hook () ""
        (whitespace-mode)
        (display-line-numbers-mode))

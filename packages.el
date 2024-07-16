@@ -4,8 +4,17 @@
 (package-initialize)
 
 (when (or (string= (system-name) "fedora")
-	  (string= (system-name) "debian"))
-  (package-install 'adwaita-dark-theme))
+          (string= (system-name) "debian"))
+  (use-package adwaita-dark-theme
+    :ensure t
+    :config
+    (load-theme 'adwaita-dark t)))
+
+(when (eq system-type 'darwin)
+  (use-package vscode-dark-plus-theme
+    :ensure t
+    :config
+    (load-theme 'vscode-dark-plus t)))
 
 (use-package editorconfig
   :ensure t
