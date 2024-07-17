@@ -10,6 +10,8 @@
     (set-face-attribute 'default nil :height 120 :foundry "nil" :family "Menlo")
   )
 
+(setq verilog-auto-endcomments nil)
+
 (defun my-prog-mode-hook () ""
        (whitespace-mode)
        (display-line-numbers-mode))
