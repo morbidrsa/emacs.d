@@ -64,4 +64,9 @@
 (use-package lsp-treemacs
   :ensure t)
 
+(use-package vterm
+  :ensure t
+  :bind (:map vterm-mode-map ("C-y" . vterm-yank))
+    :config (setq vterm-max-scrollback 100000))
+
 (require 'org)
