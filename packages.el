@@ -26,6 +26,9 @@
   :bind (("C-x g" . magit-status)
 	 ("C-x C-g" . magit-status)))
 
+(use-package flycheck
+  :ensure t)
+
 (use-package ansible
   :ensure t)
 
