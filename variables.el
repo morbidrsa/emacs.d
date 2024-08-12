@@ -12,7 +12,7 @@
 
 (setq verilog-auto-endcomments nil)
 (setq whitespace-mode
-    (quote (spaces tabs newline space-mark stab-mark newline-mark)))
+    (quote (spaces tabs newline space-mark tab-mark newline-mark)))
 
 (defun my-prog-mode-hook () ""
        (whitespace-mode)
