@@ -67,6 +67,9 @@
 (use-package lsp-treemacs
   :ensure t)
 
+(use-package lsp-ui
+  :ensure t)
+
 (use-package vterm
   :ensure t
   :bind (:map vterm-mode-map ("C-y" . vterm-yank))
