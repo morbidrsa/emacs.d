@@ -26,6 +26,16 @@
        (display-line-numbers-mode))
 (add-hook 'prog-mode-hook 'my-prog-mode-hook)
 
+(defun lsp-mode-config-hook () ""
+       (unless (display-graphic-p)
+         (set-face-attribute 'lsp-headerline-breadcrumb-path-face nil
+                             :foreground "black")
+         (set-face-attribute 'lsp-headerline-breadcrumb-symbols-face nil
+                             :foreground "black" :underline nil
+                             :weight 'normal)))
+
+(add-hook 'lsp-after-open-hook 'lsp-mode-config-hook)
+
 (add-to-list 'display-buffer-alist
      '("\*vterm\*"
        (display-buffer-in-side-window)
