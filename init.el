@@ -1,5 +1,5 @@
-(load "~/.emacs.d/variables")
 (load "~/.emacs.d/packages")
+(load "~/.emacs.d/variables")
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
