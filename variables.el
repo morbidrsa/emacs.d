@@ -16,10 +16,6 @@
 	     missing-newline-at-eof
 	     empty indentation space-after-tab space-before-tab space-mark
 	     tab-mark newline-mark))
-(defun my-whitespace-mode-hook () ""
-       (set-face-attribute 'whitespace-space nil :background nil)
-       (set-face-attribute 'whitespace-tab nil :background nil))
-(add-hook 'whitespace-mode-hook 'my-whitespace-mode-hook)
 
 (defun my-prog-mode-hook () ""
        (whitespace-mode)
