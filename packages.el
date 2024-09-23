@@ -27,27 +27,33 @@
 	 ("C-x C-g" . magit-status)))
 
 (use-package flycheck
-  :ensure t)
+  :ensure t
+  :defer t)
 
 (use-package ansible
-  :ensure t)
+  :ensure t
+  :defer t)
 
 (use-package minimap
   :ensure t
+  :defer t
   :config (setq minimap-window-location 'right))
 
 (use-package whitespace
   :ensure t
+  :defer t
   :config
   (set-face-attribute 'whitespace-space nil :background nil)
   (set-face-attribute 'whitespace-tab nil :background nil)
   )
 
 (use-package rust-mode
-  :ensure t)
+  :ensure t
+  :defer t)
 
 (use-package clang-format
   :ensure t
+  :defer t
   :config (global-set-key [C-M-tab] 'clang-format-region))
 
 (use-package lsp-mode
@@ -62,23 +68,29 @@
   (setq lsp-keymap-prefix "C-c C-l"))
 (use-package company
   :ensure t
+  :defer t
   :config
   (add-hook 'c-mode-hook 'company-mode))
 
 (use-package treemacs
-  :ensure t)
+  :ensure t
+  :defer t)
 
 (use-package treemacs-magit
-  :ensure t)
+  :ensure t
+  :defer t)
 
 (use-package lsp-treemacs
-  :ensure t)
+  :ensure t
+  :defer t)
 
 (use-package lsp-ui
-  :ensure t)
+  :ensure t
+  :defer t)
 
 (use-package vterm
   :ensure t
+  :defer t
   :bind (:map vterm-mode-map ("C-y" . vterm-yank))
     :config (setq vterm-max-scrollback 100000))
 
