@@ -3,14 +3,13 @@
 (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/"))
 (package-initialize)
 
-(when (or (string= (system-name) "fedora")
-          (string= (system-name) "debian"))
+
+(if (or (string= (system-name) "fedora")
+	(string= (system-name) "debian"))
   (use-package adwaita-dark-theme
     :ensure t
     :config
-    (load-theme 'adwaita-dark t)))
-
-(when (eq system-type 'darwin)
+    (load-theme 'adwaita-dark t))
   (use-package vscode-dark-plus-theme
     :ensure t
     :config
