@@ -18,7 +18,8 @@
 	     tab-mark newline-mark))
 
 (defun my-prog-mode-hook () ""
-       (whitespace-mode)
+       (when (display-graphic-p)
+	 (whitespace-mode))
        (display-line-numbers-mode))
 (add-hook 'prog-mode-hook 'my-prog-mode-hook)
 
