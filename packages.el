@@ -59,12 +59,15 @@
   :ensure t
   :init
   (setq lsp-keymap-prefix "C-c l")
+  :hook
+    (c-mode-hook . lsp)
+    (c++-mode-hook . lsp)
+    (python-mode-hook . lsp)
   :config
-  (add-hook 'c-mode-hook #'lsp)
-  (add-hook 'c++-mode-hook #'lsp)
   (setq lsp-clangd-binary-path "/usr/bin/clangd")
   (setq lsp-client-clangd-args '("-j=4" "-background-index" "-log=error"))
   (setq lsp-keymap-prefix "C-c C-l"))
+
 (use-package company
   :ensure t
   :defer t
