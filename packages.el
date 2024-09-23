@@ -1,8 +1,6 @@
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/"))
-(package-initialize)
-
 
 (if (or (string= (system-name) "fedora")
 	(string= (system-name) "debian"))
