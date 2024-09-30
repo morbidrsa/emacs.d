@@ -20,7 +20,13 @@
 (defun my-prog-mode-hook () ""
        (when (display-graphic-p)
 	 (whitespace-mode))
-       (display-line-numbers-mode))
+       (display-line-numbers-mode)
+       (setq-default fill-column 80)
+       (setq display-fill-column-indicator-column t)
+       (set-face-foreground 'fill-column-indicator "red")
+       (display-fill-column-indicator-mode)
+       (global-display-fill-column-indicator-mode)
+       )
 (add-hook 'prog-mode-hook 'my-prog-mode-hook)
 
 (defun lsp-mode-config-hook () ""
