@@ -36,14 +36,6 @@
   :defer t
   :config (setq minimap-window-location 'right))
 
-(use-package whitespace
-  :ensure t
-  :defer t
-  :config
-  (set-face-attribute 'whitespace-space nil :background nil)
-  (set-face-attribute 'whitespace-tab nil :background nil)
-  )
-
 (use-package rust-mode
   :ensure t
   :defer t)
