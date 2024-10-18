@@ -86,4 +86,4 @@
   :bind (:map vterm-mode-map ("C-y" . vterm-yank))
     :config (setq vterm-max-scrollback 100000))
 
-(require 'org)
+(use-package org)
