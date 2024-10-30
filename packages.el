@@ -27,6 +27,9 @@
   :ensure t
   :defer t)
 
+(use-package yaml-mode
+  :ensure t)
+
 (use-package ansible
   :ensure t
   :defer t)
