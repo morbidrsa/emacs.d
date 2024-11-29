@@ -7,7 +7,7 @@
 (setq column-number-mode 1)
 (setq make-backup-files nil)
 
-(setq show-trailing-whitespace t)
+(setq-default show-trailing-whitespace t)
 
 (if (eq system-type 'darwin)
     (set-face-attribute 'default nil :height 120 :foundry "nil" :family "Menlo")
