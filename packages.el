@@ -90,3 +90,6 @@
     :config (setq vterm-max-scrollback 100000))
 
 (use-package org)
+
+(use-package pdf-tools
+  :ensure t)
