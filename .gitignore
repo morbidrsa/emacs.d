@@ -2,3 +2,6 @@ eshell/
 .lsp-session-v1
 elpa/
 transient/
+.cache/
+auto-save-list/
+eln-cache/
