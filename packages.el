@@ -7,9 +7,9 @@
 
 (if (eq system-type 'gnu/linux)
     (if (display-graphic-p)
-	(load-theme 'adwaita-dark))
+	(load-theme 'adwaita-dark t))
   (eq system-type 'darwin)
-  (load-theme 'vscode-dark-plus))
+  (load-theme 'vscode-dark-plus t))
 
 (use-package editorconfig
   :ensure t
@@ -91,3 +91,11 @@
 
 (use-package pdf-tools
   :ensure t)
+
+(use-package ellama
+  :init
+  (setopt ellama-language "English")
+  (require 'llm-ollama)
+  (setopt ellama-provider
+          (make-llm-ollama
+           :chat-model "codellama" :embedding-model "codellama")))
