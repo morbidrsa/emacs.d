@@ -2,15 +2,6 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/"))
 
-(use-package adwaita-dark-theme :ensure t)
-(use-package vscode-dark-plus-theme :ensure t)
-
-(if (eq system-type 'gnu/linux)
-    (if (display-graphic-p)
-	(load-theme 'adwaita-dark t))
-  (eq system-type 'darwin)
-  (load-theme 'vscode-dark-plus t))
-
 (use-package editorconfig
   :ensure t
   :config
