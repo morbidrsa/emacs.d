@@ -15,6 +15,7 @@
 
 (setq verilog-auto-endcomments nil)
 (add-hook 'c-mode-hook 'lsp)
+(add-hook 'python-mode-hook 'lsp)
 
 (defun my-prog-mode-hook () ""
        (display-line-numbers-mode)
