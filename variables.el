@@ -14,21 +14,9 @@
   )
 
 (setq verilog-auto-endcomments nil)
-(setq whitespace-style
-      '(face trailing tabs spaces lines lines-tail newline
-	     missing-newline-at-eof
-	     empty indentation space-after-tab space-before-tab space-mark
-	     tab-mark newline-mark))
-(defun my-whitespace-hook () ""
-       (set-face-attribute 'whitespace-space nil :background nil)
-       (set-face-attribute 'whitespace-tab nil :background nil))
-(add-hook 'whitespace-hook 'my-whitespace-hook)
-
 (add-hook 'c-mode-hook 'lsp)
 
 (defun my-prog-mode-hook () ""
-       (when (display-graphic-p)
-	 (whitespace-mode))
        (display-line-numbers-mode)
        (setq-default fill-column 80)
        (setq display-fill-column-indicator-column t)
