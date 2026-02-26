@@ -99,7 +99,3 @@
   (setopt ellama-provider
           (make-llm-ollama
            :chat-model "codellama" :embedding-model "codellama")))
-
-(use-package evil
-  :ensure t
-  :init (evil-mode))
