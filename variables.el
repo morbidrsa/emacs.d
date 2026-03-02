@@ -52,3 +52,6 @@
        (side . bottom)
        (slot . 0)))
 
+(when (file-exists-p "~/Notes/agenda.org")
+  (add-to-list 'org-agenda-files "~/Notes/agenda.org"))
+
