@@ -90,3 +90,10 @@
   (setopt ellama-provider
           (make-llm-ollama
            :chat-model "codellama" :embedding-model "codellama")))
+
+(use-package solarized-theme
+  :config
+  (add-to-list 'custom-theme-load-path
+	       "~/.emacs.d/elpa/solarized-theme")
+  :init
+  (load-theme 'solarized-light))
