@@ -96,4 +96,6 @@
   (add-to-list 'custom-theme-load-path
 	       "~/.emacs.d/elpa/solarized-theme")
   :init
-  (load-theme 'solarized-light))
+  (when (and (server-running-p) (display-graphic-p))
+    (load-theme 'solarized-light))
+  )
