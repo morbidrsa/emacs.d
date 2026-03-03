@@ -52,6 +52,10 @@
        (side . bottom)
        (slot . 0)))
 
-(when (file-exists-p "~/Notes/agenda.org")
-  (add-to-list 'org-agenda-files "~/Notes/agenda.org"))
+(defun jth/show-todays-agenda ()
+    "Show today's org-agenda."
+    (org-agenda nil "a"))
 
+(when (file-exists-p "~/Notes/agenda.org")
+  (add-to-list 'org-agenda-files "~/Notes/agenda.org")
+  (add-hook 'emacs-startup-hook #'jth/show-todays-agenda))
