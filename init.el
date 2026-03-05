@@ -1,5 +1,7 @@
 (load "~/.emacs.d/packages")
 (load "~/.emacs.d/variables")
+(when (file-exists-p "~/.emacs.d/org.el")
+  (load "~/.emacs.d/org"))
 
 ;;(with-eval-after-load 'mu4e
 ;;  (load "~/.emacs.d/mu4e"))
