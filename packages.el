@@ -99,3 +99,8 @@
   (when (and (server-running-p) (display-graphic-p))
     (load-theme 'solarized-light))
   )
+
+(use-package b4-mode
+  :ensure t
+  :vc (:url https://github.com/morbidrsa/b4-mode
+	    :rev :newest))
