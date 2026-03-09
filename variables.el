@@ -7,6 +7,7 @@
 (setq column-number-mode 1)
 (setq make-backup-files nil)
 (setq visible-bell nil)
+(setq-default mode-line-format nil)
 
 (setq-default show-trailing-whitespace t)
 
