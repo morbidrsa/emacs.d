@@ -94,14 +94,9 @@
           (make-llm-ollama
            :chat-model "codellama" :embedding-model "codellama")))
 
-(use-package solarized-theme
-  :config
-  (add-to-list 'custom-theme-load-path
-	       "~/.emacs.d/elpa/solarized-theme")
-  :init
-  (when (and (server-running-p) (display-graphic-p))
-    (load-theme 'solarized-light))
-  )
+(use-package doom-themes
+  :ensure t
+  :config (load-theme 'doom-nord t))
 
 (use-package b4-mode
   :ensure t
