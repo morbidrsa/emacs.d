@@ -12,10 +12,6 @@
 
 (setq-default show-trailing-whitespace t)
 
-(if (eq system-type 'darwin)
-    (set-face-attribute 'default nil :height 120 :foundry "nil" :family "Menlo")
-  )
-
 (setq verilog-auto-endcomments nil)
 (add-hook 'c-mode-hook 'lsp)
 (add-hook 'python-mode-hook 'lsp)

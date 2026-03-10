@@ -3,6 +3,10 @@
 (when (file-exists-p "~/.emacs.d/org.el")
   (load "~/.emacs.d/org"))
 
+(if (eq system-type 'darwin)
+    (load "~/.emacs.d/macos"))
+
+
 ;;(with-eval-after-load 'mu4e
 ;;  (load "~/.emacs.d/mu4e"))
 (let ((host (car (split-string (system-name) "\\."))))
