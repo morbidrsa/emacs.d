@@ -86,6 +86,7 @@
   :ensure t)
 
 (use-package ellama
+  :ensure t
   :init
   (setopt ellama-language "English")
   (require 'llm-ollama)
