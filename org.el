@@ -1,3 +1,6 @@
+(use-package ox-pandoc
+  :ensure t)
+
 (global-set-key (kbd "C-x a") #'org-agenda)
 
 (defun jth/show-todays-agenda ()
