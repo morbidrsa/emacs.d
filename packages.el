@@ -49,7 +49,6 @@
   (setq lsp-clangd-binary-path "/usr/bin/clangd")
   (setq lsp-client-clangd-args '("-j=4" "-background-index" "-log=error"))
   (setq lsp-keymap-prefix "C-c C-l")
-  :custom
   (setq lsp-headerline-breadcrumb-enable nil))
 
 (use-package company
