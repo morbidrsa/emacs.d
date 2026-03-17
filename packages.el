@@ -10,7 +10,11 @@
 (use-package magit
   :ensure t
   :bind (("C-x g" . magit-status)
-	 ("C-x C-g" . magit-status)))
+	 ("C-x C-g" . magit-status))
+  :config
+  (setq git-commit-summary-max-length 74)
+  (setq git-commit-fill-column 74)
+  )
 
 (use-package flycheck
   :ensure t
