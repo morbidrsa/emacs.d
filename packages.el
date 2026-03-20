@@ -97,10 +97,6 @@
           (make-llm-ollama
            :chat-model "codellama" :embedding-model "codellama")))
 
-(use-package doom-themes
-  :ensure t
-  :config (load-theme 'doom-nord t))
-
 (use-package b4-mode
   :ensure t
   :vc (:url https://github.com/morbidrsa/b4-mode

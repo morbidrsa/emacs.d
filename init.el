@@ -3,6 +3,9 @@
 (when (file-exists-p "~/.emacs.d/org.el")
   (load "~/.emacs.d/org"))
 
+(when (file-exists-p "~/.emacs.d/themes.el")
+  (load-file "~/.emacs.d/themes.el"))
+
 (if (eq system-type 'darwin)
     (load "~/.emacs.d/macos"))
 

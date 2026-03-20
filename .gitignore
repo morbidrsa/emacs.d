@@ -7,3 +7,4 @@ auto-save-list/
 eln-cache/
 tramp
 org-persist/
+themes.el
