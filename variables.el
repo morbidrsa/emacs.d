@@ -12,9 +12,6 @@
 ;; from https://github.com/SophieBosio/.emacs.d/blob/main/init.org#custom-mode-line
 (setq-default mode-line-format
       '("%e"
-	(:propertize " " display (raise +0.4)) ;; Top padding
-	(:propertize " " display (raise -0.4)) ;; Bottom padding
-
 	(:propertize "λ " face font-lock-comment-face)
 	mode-line-frame-identification
 	mode-line-buffer-identification
