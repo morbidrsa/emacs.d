@@ -44,6 +44,8 @@
 (setq-default show-trailing-whitespace t)
 
 (setq verilog-auto-endcomments nil)
+(setq verilog-indent-lists nil)
+
 (add-hook 'c-mode-hook 'lsp)
 (add-hook 'python-mode-hook 'lsp)
 (add-hook 'rust-mode-hook 'lsp)
