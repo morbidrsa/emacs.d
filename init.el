@@ -13,8 +13,6 @@
 (when (file-exists-p custom-file)
   (load custom-file))
 
-;;(with-eval-after-load 'mu4e
-;;  (load "~/.emacs.d/mu4e"))
 (let ((host (car (split-string (system-name) "\\."))))
   (when (string= host "MacBookPro")
     (load "~/.emacs.d/mu4e")))
