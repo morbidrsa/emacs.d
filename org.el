@@ -19,3 +19,6 @@
 (when (file-exists-p "~/Notes/private.org")
   (add-to-list 'org-agenda-files "~/Notes/private.org")
   (add-hook 'emacs-startup-hook #'jth/show-todays-agenda))
+
+(setq org-todo-keywords
+      '((sequence "TODO" "INPROGRESS" "|" "DONE")))
